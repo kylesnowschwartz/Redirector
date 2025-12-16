@@ -405,8 +405,6 @@ function sendNotifications(redirect, originalUrl, redirectedUrl) {
 	chrome.notifications.create(opt);
 }
 
-chrome.runtime.setUninstallURL("https://extenhub.com/uninstall?extension=Redirector");
-
 // Set up on install
 chrome.runtime.onInstalled.addListener(function(details) {
 	log('Extension installed or updated');
@@ -418,17 +416,6 @@ chrome.runtime.onInstalled.addListener(function(details) {
 		log.enabled = obj.logging;
 		enableNotifications = obj.enableNotifications;
 	});
-
-	// Open website on first install
-	if (details.reason === 'install') {
-		chrome.tabs.create({
-			url: 'https://extenhub.com/installed'
-		});
-	} else if (details.reason === 'update') {
-		chrome.tabs.create({
-			url: 'https://extenhub.com/update'
-		});
-	}
 });
 
 // Set up on startup
