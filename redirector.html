@@ -169,13 +169,84 @@
 						</div>
 					</div>
 					<div class="cheatsheet-section">
-						<h4>Common Patterns</h4>
+						<h4>Syntax Patterns</h4>
 						<div class="cheatsheet-grid">
 							<code>^https?://</code><span>HTTP or HTTPS</span>
 							<code>([^/]+)</code><span>Capture until slash</span>
 							<code>([^?]+)</code><span>Capture until query string</span>
 							<code>\?.*</code><span>Query string and after</span>
 							<code>(?:www\.)?</code><span>Optional www prefix</span>
+						</div>
+					</div>
+				</div>
+				<div class="cheatsheet-examples">
+					<h4>Ready-to-Use Examples</h4>
+					<div class="example-cards">
+						<div class="example-card">
+							<span class="example-title">X → xcancel (privacy frontend)</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://(?:www\.)?(?:twitter|x)\.com/(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://xcancel.com/$1</code>
+							</div>
+						</div>
+						<div class="example-card">
+							<span class="example-title">Reddit → Old Reddit</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://(?:www\.)?reddit\.com/(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://old.reddit.com/$1</code>
+							</div>
+						</div>
+						<div class="example-card">
+							<span class="example-title">YouTube → Piped (privacy frontend)</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://(?:www\.)?youtube\.com/(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://piped.video/$1</code>
+							</div>
+						</div>
+						<div class="example-card">
+							<span class="example-title">Medium → Scribe (no paywall)</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://(?:www\.)?medium\.com/(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://scribe.rip/$1</code>
+							</div>
+						</div>
+						<div class="example-card">
+							<span class="example-title">YouTube Shorts → Regular Video</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://(?:www\.)?youtube\.com/shorts/([^?]+)(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://youtube.com/watch?v=$1$2</code>
+							</div>
+						</div>
+						<div class="example-card">
+							<span class="example-title">Remove mobile prefix (m.site.com)</span>
+							<div class="example-pattern">
+								<span class="example-label">Match:</span>
+								<code>^https?://m\.([^/]+)/(.*)</code>
+							</div>
+							<div class="example-pattern">
+								<span class="example-label">Redirect:</span>
+								<code>https://$1/$2</code>
+							</div>
 						</div>
 					</div>
 				</div>
