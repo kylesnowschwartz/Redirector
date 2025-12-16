@@ -1,19 +1,6 @@
-Copyright (c) 2025 ExtenHub
-All rights reserved.
-
-This source code is made available for viewing and educational purposes only.
-Reuse, modification, or redistribution of *ExtenHub's original code* is
-prohibited without explicit written permission from the copyright holder.
-
----
-
-Parts of this project include or are adapted from work by Einar Egilsson,
-originally available at: https://github.com/einaregilsson/Redirector.
-
-The following MIT License applies strictly and exclusively to those portions:
-
 MIT License
-Copyright (c) 2016 Einar Egilsson
+
+Copyright (c) 2016-2025 Redirector Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,14 +11,6 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
----
-
-The MIT License applies only to the portions of code derived from the work of
-Einar Egilsson. ExtenHub's original code is not licensed under MIT.
-
-No express or implied rights are granted under any patents, copyrights, or
-trademarks relating to ExtenHub's original code.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
