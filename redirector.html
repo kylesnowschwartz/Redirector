@@ -141,6 +141,46 @@
 				<a class="btn blue large" href="help.html" target="_blank">Help</a>
 			</div>
 
+			<!-- Pattern Cheatsheet -->
+			<details id="cheatsheet">
+				<summary><span class="cheatsheet-icon">+</span> Pattern Cheatsheet</summary>
+				<div class="cheatsheet-content">
+					<div class="cheatsheet-section">
+						<h4>Wildcard Mode</h4>
+						<div class="cheatsheet-grid">
+							<code>*</code><span>Match anything, capture as $1, $2...</span>
+							<code>http://example.com/*</code><span>Captures path after domain</span>
+							<code>$1</code><span>First captured wildcard</span>
+						</div>
+					</div>
+					<div class="cheatsheet-section">
+						<h4>Regex Mode</h4>
+						<div class="cheatsheet-grid">
+							<code>^</code><span>Start of URL</span>
+							<code>$</code><span>End of URL</span>
+							<code>.</code><span>Any single character</span>
+							<code>.*</code><span>Any characters (greedy)</span>
+							<code>.*?</code><span>Any characters (lazy)</span>
+							<code>()</code><span>Capture group → $1, $2...</span>
+							<code>(?:)</code><span>Non-capturing group</span>
+							<code>[a-z]</code><span>Character class</span>
+							<code>\.</code><span>Literal dot (escaped)</span>
+							<code>a|b</code><span>Match a OR b</span>
+						</div>
+					</div>
+					<div class="cheatsheet-section">
+						<h4>Common Patterns</h4>
+						<div class="cheatsheet-grid">
+							<code>^https?://</code><span>HTTP or HTTPS</span>
+							<code>([^/]+)</code><span>Capture until slash</span>
+							<code>([^?]+)</code><span>Capture until query string</span>
+							<code>\?.*</code><span>Query string and after</span>
+							<code>(?:www\.)?</code><span>Optional www prefix</span>
+						</div>
+					</div>
+				</div>
+			</details>
+
 			<div id="message-box">
 				<span data-bind="message" id="message"></span>
 				<a id="hide-message">&#x2716;</a>
